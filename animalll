@@ -1,0 +1,87 @@
+<?php
+
+
+class animal {
+    public $jumlah_kaki, $bisa_terbang;
+}
+
+class sapi extends animal 
+{
+    function bersuara ()
+    {
+        return "mmoooo";
+    }
+}
+
+class babi extends animal 
+{
+    function bersuara ()
+    {
+        return "ngrokkk";
+    }
+}
+
+class tikus extends animal 
+{
+    function bersuara ()
+    {
+        return "cittciitt";
+    }
+}
+
+class burung_gagak extends animal 
+{
+    function bersuara ()
+    {
+        return "arkkaarkkk";
+    }
+}
+
+// sapi
+$momo = new sapi;
+$momo->jumlah_kaki = 4;
+$momo->bisa_terbang = "Tidak Bisa Terbang";
+
+echo "momo Adalah sapi <br>";
+echo "Punya Kaki Sebanyak: " . $momo->jumlah_kaki . "<br>";
+echo $momo->bisa_terbang . "<br>";
+echo "Suaranya: " . $momo->bersuara() . "<br>";
+
+
+echo "<hr>";
+
+// babi
+$mamad = new babi;
+$mamad->jumlah_kaki = 4;
+$mamad->bisa_terbang = "Tidak Bisa Terbang";
+
+echo "mamad Adalah babi <br>";
+echo "Punya Kaki Sebanyak: " . $mamad->jumlah_kaki . "<br>";
+echo $mamad->bisa_terbang . "<br>";
+echo "Suaranya: " . $mamad->bersuara() . "<br>";
+
+echo "<hr>";
+
+// tikus
+$jowo = new tikus;
+$jowo->jumlah_kaki = 4;
+$jowo->bisa_terbang = "Tidak Bisa Terbang";
+
+echo "jowo Adalah tikus <br>";
+echo "Punya Kaki Sebanyak: " . $jowo->jumlah_kaki . "<br>";
+echo $jowo->bisa_terbang . "<br>";
+echo "Suaranya: " . $jowo->bersuara() . "<br>";
+
+echo "<hr>";
+
+// burung_gagak
+$sthepen = new burung_gagak;
+$sthepen->jumlah_kaki = 2;
+$sthepen->bisa_terbang = "Bisa Terbang";
+
+echo "sthepen Adalah burung_gagak <br>";
+echo "Punya Kaki Sebanyak: " . $sthepen->jumlah_kaki . "<br>";
+echo $sthepen->bisa_terbang . "<br>";
+echo "Suaranya: " . $sthepen->bersuara() . "<br>";
+
+echo "<hr>";
